@@ -1,0 +1,2 @@
+rootProject.name = "framedata2"
+include ':app'

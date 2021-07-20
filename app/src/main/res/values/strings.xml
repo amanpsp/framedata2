@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">framedata2</string>
+    <string name="anji">Anji Mito</string>
+    <string name="axl">Axl Low</string>
+    <string name="chipp">Chipp Zanuff</string>
+    <string name="faust">Faust</string>
+    <string name="gio">Giovanna</string>
+    <string name="ino">I-no</string>
+    <string name="ky">Ky Kiske</string>
+    <string name="leo">Leo Whitefang</string>
+    <string name="may">May</string>
+    <string name="millia">Millia Rage</string>
+    <string name="nago">Nagoriyuki</string>
+    <string name="pot">Potemkin</string>
+    <string name="ram">Ramlethal Valentine</string>
+    <string name="sol">Sol Badguy</string>
+    <string name="zato">Zato-1</string>
+</resources>
