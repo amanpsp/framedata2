@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Button xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/item_title"
-    android:text="character name place holder"
+    android:contentDescription="character thumbnail"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-</Button>
+</ImageButton>
+
+
+
