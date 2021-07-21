@@ -4,7 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 import com.example.framedata2.R
 import com.example.framedata2.model.Character
@@ -14,7 +14,7 @@ class ItemAdapter(private val context: Context,
                   ) :RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
 
     class ItemViewHolder(private val view: View): RecyclerView.ViewHolder(view){
-        val textView: TextView = view.findViewById(R.id.item_title)
+        val buttonview: Button =  view.findViewById(R.id.item_title)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
@@ -28,7 +28,7 @@ class ItemAdapter(private val context: Context,
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-        holder.textView.text = context.resources.getString(item.stringResourceId)
+        holder.buttonview.text = context.resources.getString(item.stringResourceId)
     }
 
     override fun getItemCount() = dataset.size
