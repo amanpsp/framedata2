@@ -2,6 +2,7 @@ package com.example.framedata2
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.framedata2.adapter.ItemAdapter
 import com.example.framedata2.data.Datasource
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.adapter = ItemAdapter(this, myDataset)
         recyclerView.setHasFixedSize(true)
+        recyclerView.layoutManager= GridLayoutManager(this, 3)
 
     }
 }
