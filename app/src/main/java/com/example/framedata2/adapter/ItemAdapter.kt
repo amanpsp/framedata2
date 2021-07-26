@@ -4,8 +4,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.framedata2.R
+import com.example.framedata2.fragments.CharacterListDirections
 import com.example.framedata2.model.Character
 
 class ItemAdapter(
@@ -28,6 +30,13 @@ class ItemAdapter(
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
         holder.imagebuttonview.setImageResource(item.characterportrait)
+
+        holder.imagebuttonview.setOnClickListener{
+           val action = CharacterListDirections.actionCharacterListToMoveType(R.id.item_title.toString())
+            holder.imagebuttonview.findNavController().navigate(action)
+        }
+
+
     }
 
     override fun getItemCount() = dataset.size
