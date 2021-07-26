@@ -1,4 +1,5 @@
 <resources>
+    <string name="action_switch_layout">Switch Layout</string>
     <string name="app_name">framedata2</string>
     <string name="anji">Anji Mito</string>
     <string name="axl">Axl Low</string>
