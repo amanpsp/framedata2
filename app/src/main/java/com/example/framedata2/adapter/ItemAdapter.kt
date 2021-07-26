@@ -1,6 +1,5 @@
 package com.example.framedata2.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.framedata2.R
 import com.example.framedata2.model.Character
 
-class ItemAdapter(private val context: Context,
+class ItemAdapter(
                   private val dataset:List<Character>
                   ) :RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
 
