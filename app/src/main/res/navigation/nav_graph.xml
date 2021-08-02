@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/characterList">
+
+    <fragment
+        android:id="@+id/characterList"
+        android:name="com.example.framedata2.fragments.CharacterList"
+        android:label="CharacterList" >
+        <action
+            android:id="@+id/action_characterList_to_moveType"
+            app:destination="@id/moveType" />
+    </fragment>
+    <fragment
+        android:id="@+id/moveType"
+        android:name="com.example.framedata2.fragments.MoveType"
+        android:label="MoveType" >
+        <action
+            android:id="@+id/action_moveType_to_moveData"
+            app:destination="@id/moveData" />
+        <argument
+            android:name="character"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/moveData"
+        android:name="com.example.framedata2.fragments.MoveData"
+        android:label="MoveData" >
+        <argument
+            android:name="character"
+            app:argType="string" />
+        <argument
+            android:name="moveType"
+            app:argType="string" />
+    </fragment>
+</navigation>
